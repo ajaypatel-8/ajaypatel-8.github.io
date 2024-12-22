@@ -3,7 +3,9 @@ layout: page
 title: "About Me"
 ---
 
-![Headshot of Ajay Patel](headshot.jpg)
+<div style="text-align: center;">
+    <img src="headshot.jpg" alt="Headshot of Ajay Patel" width="200">
+</div>
 
 Welcome to my personal website! I'm a current Master of Information and Data Science student at University of California, Berkeley. I earned my Bachelor's of Science in Data Science from the University of Rochester in December, 2024. I've worked at ShotQuality, Optum, and the Los Angeles Dodgers in various tech roles. 
 
