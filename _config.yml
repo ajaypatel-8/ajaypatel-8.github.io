@@ -16,8 +16,7 @@ minimal: false             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "blog.md", title: "Blog"}
-  - {file: "projects.md", title: "Projects"}
+  - {file: "blog.md", title: "Projects & Articles"}
   - {url: "https://github.com/ajaypatel-8/ajaypatel-8.github.io/blob/master/ajay_patel-resume.pdf", title: "Resume"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
