@@ -18,7 +18,7 @@ minimal: false             # use a dark header
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "blog.md", title: "Blog"}
   - {file: "projects.md", title: "Projects"}
-  - {file: "resume.md", title: "Resume"}
+  - {url: "https://github.com/ajaypatel-8/ajaypatel-8.github.io/blob/master/ajay_patel-resume.pdf", title: "Resume"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:ajpat8703@gmail.com"}
