@@ -23,6 +23,7 @@ external:                  # shows a footer with social links - for available ic
   - {title: Mail, icon: envelope, url: "mailto:ajpat8703@gmail.com"}
   - {title: Github, icon: github, url: "https://github.com/ajaypatel-8"}
   - {title: Twitter, icon: twitter, url: "https://x.com/ajaypatel8_"}
+  - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/ajay-patel-a88273216/"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
