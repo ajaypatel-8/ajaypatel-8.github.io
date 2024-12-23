@@ -11,7 +11,7 @@ and results are effectively communicated, and my initial versions can be found a
 Since then, I refined different aspects of the reports. Below is a more recent and finalized version.
 
 <div style="text-align: center;">
-    <img src="cortesSummary.jp" alt="Headshot of Ajay Patel" width="200">
+    <img src="NestorCortes.png" alt="Nestor Cortes 2/26 Game Summary" width="500">
 </div>
 
 The code to make these reports can be found here: [Pitcher Summaries Code](https://github.com/ajaypatel-8/Baseball-Plots/blob/main/pitcher_game_summary.R).
