@@ -1,5 +1,5 @@
 ---
-title: "Exit Velocity over Expected"
+title: "URSAC Coding Tutorials"
 layout: post
 categories: undergraduate
 ---
