@@ -4,7 +4,7 @@ layout: post
 categories: research
 ---
 
-Using MLB's api, I developed a website utilizing React and Javascript to display MLB scores and relevant information for completed games, 
+Using MLB's API, I developed a website utilizing React and Javascript to display MLB scores and relevant information for completed games, 
 and preview information for upcoming games. The site is deployed through Github Pages and can be found [here](https://ajaypatel-8.github.io/mlb-games/).
 
 Below is an example of what a day's worth of games would look like on the site. It supports functionality to view top performers, pitchers
