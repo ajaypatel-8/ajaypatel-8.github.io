@@ -14,4 +14,4 @@ who recorded decisioins, and summaries for all players along with links to Baseb
   <img src="/games.png" alt="MLB Games From 07/01/2024" width="500">
 <div/>
 
-The code for the website can be found [here](https://github.com/ajaypatel-8/mlb-games). 
+The code for the website can be found [here](https://github.com/ajaypatel-8/mlb-games)
