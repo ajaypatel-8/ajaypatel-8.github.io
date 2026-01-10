@@ -4,7 +4,7 @@ title: "About Me"
 ---
 
 <div style="text-align: center;">
-    <img src="headshot.jpg" alt="Headshot of Ajay Patel" width="200">
+    <img src="berkeley_headshot.JPG" alt="Headshot of Ajay Patel" width="200">
 </div>
 
 Welcome to my personal website! I'm a current Junior Data Scientist with the Pittsburgh Pirates and Master of Information and Data Science student at University of California, Berkeley. I earned my Bachelor's of Science in Data Science from the University of Rochester in December, 2024. In the past, I've worked at ShotQuality, Optum, and the Los Angeles Dodgers in various tech roles. 
