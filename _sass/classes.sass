@@ -138,3 +138,224 @@ a:hover .icon
     color: #f92672
   .gi
     color: #a6e22e
+
+@keyframes rise-in
+  from
+    opacity: 0
+    transform: translateY(10px)
+  to
+    opacity: 1
+    transform: translateY(0)
+
+.home-hero
+  display: grid
+  grid-template-columns: 240px 1fr
+  gap: 1.5rem
+  align-items: center
+  padding: 1.3rem
+  border: 1px solid reduce(16)
+  border-radius: 12px
+  background: linear-gradient(180deg, reduce(6), transparent)
+  animation: rise-in .35s ease-out
+
+@media (max-width: 42em)
+  .home-hero
+    grid-template-columns: 1fr
+    text-align: center
+
+.home-hero-media
+  display: flex
+  justify-content: center
+
+.profile-photo
+  width: 220px
+  height: 220px
+  object-fit: cover
+  object-position: center 20%
+  border-radius: 50%
+  border: 4px solid $light
+  box-shadow: 0 0 0 1px reduce(30), 0 10px 28px reduce(30)
+  margin: 0
+
+.hero-kicker
+  text-transform: uppercase
+  letter-spacing: .08em
+  font-size: .78em
+  font-weight: 700
+  opacity: .8
+  margin: 0 0 .6rem
+
+.hero-actions
+  display: flex
+  gap: .7rem
+  margin-top: .95rem
+  flex-wrap: wrap
+
+@media (max-width: 42em)
+  .hero-actions
+    justify-content: center
+
+.hero-btn
+  display: inline-block
+  border-radius: 8px
+  padding: .42rem .82rem
+  border: 1.5px solid transparent
+  transition: .2s transform, .2s background, .2s color
+
+.hero-btn:hover
+  text-decoration: none
+  transform: translateY(-1px)
+
+.hero-btn-primary
+  background: $link-color
+  color: $light
+
+.hero-btn-secondary
+  border-color: reduce(30)
+
+.home-highlights
+  margin-top: 1.35rem
+  display: grid
+  gap: .85rem
+  grid-template-columns: repeat(3, minmax(0, 1fr))
+
+@media (max-width: 52em)
+  .home-highlights
+    grid-template-columns: 1fr
+
+.highlight-card
+  border: 1px solid reduce(16)
+  border-radius: 10px
+  padding: .9rem 1rem
+  background: reduce(3)
+  transition: .2s transform, .2s border-color
+
+.highlight-card:hover
+  transform: translateY(-2px)
+  border-color: reduce(30)
+
+.highlight-card h3
+  margin: 0 0 .3rem
+  font-size: 1.03em
+
+.highlight-card p
+  margin: 0
+
+.home-recent
+  margin-top: 1.8rem
+
+.section-head
+  display: flex
+  justify-content: space-between
+  align-items: baseline
+  gap: 1rem
+  margin-bottom: .55rem
+
+.section-head h2
+  margin: 0
+
+.recent-grid
+  display: grid
+  gap: .85rem
+  grid-template-columns: repeat(3, minmax(0, 1fr))
+
+@media (max-width: 52em)
+  .recent-grid
+    grid-template-columns: 1fr
+
+.recent-card
+  border: 1px solid reduce(16)
+  border-radius: 10px
+  padding: .85rem .95rem
+  background: reduce(2)
+  transition: .2s transform, .2s border-color
+
+.recent-card:hover
+  transform: translateY(-2px)
+  border-color: reduce(30)
+
+.recent-card h3
+  margin: .1rem 0 .35rem
+  font-size: 1.04em
+
+.recent-card p
+  margin: 0
+
+.recent-date
+  font-size: .82em
+  opacity: .75
+  margin: 0
+
+.recent-grid article:not(:last-of-type)
+  border-bottom: none
+
+.projects-shell > header p
+  margin-top: .3rem
+
+.project-filters
+  display: flex
+  flex-wrap: wrap
+  gap: .5rem
+  margin-bottom: 1rem
+
+.filter-chip
+  border: 1px solid reduce(30)
+  background: transparent
+  border-radius: 999px
+  padding: .33rem .72rem
+  cursor: pointer
+  font: inherit
+  transition: .2s border-color, .2s background, .2s color
+
+.filter-chip.active
+  background: $link-color
+  border-color: $link-color
+  color: $light
+
+.project-grid
+  display: grid
+  grid-template-columns: repeat(2, minmax(0, 1fr))
+  gap: .9rem
+
+@media (max-width: 52em)
+  .project-grid
+    grid-template-columns: 1fr
+
+.project-card
+  border: 1px solid reduce(16)
+  border-radius: 10px
+  padding: .85rem .95rem
+  background: reduce(2)
+  transition: .2s transform, .2s border-color
+
+.project-card:hover
+  transform: translateY(-2px)
+  border-color: reduce(30)
+
+.project-card h2
+  margin: .1rem 0 .4rem
+  font-size: 1.06em
+
+.project-card p
+  margin: 0
+
+.project-date
+  font-size: .82em
+  opacity: .75
+  margin: 0
+
+.project-tags
+  margin-top: .6rem
+  display: flex
+  flex-wrap: wrap
+  gap: .4rem
+
+.project-tags span
+  display: inline-block
+  font-size: .78em
+  border: 1px solid reduce(24)
+  border-radius: 999px
+  padding: .16rem .5rem
+
+.project-grid article:not(:last-of-type)
+  border-bottom: none
