@@ -311,11 +311,17 @@ a:hover .icon
   border: 1px solid var(--theme-border)
   background: transparent
   color: var(--theme-fg)
+  -webkit-text-fill-color: var(--theme-fg)
+  opacity: 1
   border-radius: 999px
   padding: .33rem .72rem
   cursor: pointer
   font: inherit
   transition: .2s border-color, .2s background, .2s color
+
+.project-filters .filter-chip
+  color: var(--theme-fg)
+  -webkit-text-fill-color: var(--theme-fg)
 
 .filter-chip.active
   background: var(--theme-link)
