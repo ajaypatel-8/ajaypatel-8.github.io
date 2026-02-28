@@ -153,10 +153,12 @@ a:hover .icon
   gap: 1.5rem
   align-items: center
   padding: 1.3rem
-  border: 1px solid reduce(16)
+  border: 1px solid var(--theme-border)
   border-radius: 12px
-  background: linear-gradient(180deg, reduce(6), transparent)
+  background: linear-gradient(180deg, color-mix(in srgb, var(--theme-surface) 92%, transparent), transparent)
   animation: rise-in .35s ease-out
+  margin-left: .45rem
+  margin-right: .45rem
 
 @media (max-width: 42em)
   .home-hero
@@ -173,7 +175,7 @@ a:hover .icon
   object-fit: cover
   object-position: center 20%
   border-radius: 50%
-  border: 4px solid $light
+  border: 4px solid var(--theme-surface)
   box-shadow: 0 0 0 1px reduce(30), 0 10px 28px reduce(30)
   margin: 0
 
@@ -182,7 +184,7 @@ a:hover .icon
   letter-spacing: .08em
   font-size: .78em
   font-weight: 700
-  color: $accent-secondary
+  color: var(--theme-accent-2)
   opacity: .95
   margin: 0 0 .6rem
 
@@ -211,37 +213,39 @@ a:hover .icon
   transform: translateY(-1px)
 
 .hero-btn-primary
-  background: $link-color
-  color: $light
+  background: var(--theme-link)
+  color: var(--theme-surface)
 
 .hero-btn-secondary
-  border-color: reduce(30)
+  border-color: var(--theme-border)
 
 .home-highlights
   margin-top: 1.35rem
   display: grid
   gap: .85rem
   grid-template-columns: repeat(3, minmax(0, 1fr))
+  margin-left: .45rem
+  margin-right: .45rem
 
 @media (max-width: 52em)
   .home-highlights
     grid-template-columns: 1fr
 
 .highlight-card
-  border: 1px solid reduce(16)
+  border: 1px solid var(--theme-border)
   border-radius: 10px
   padding: .9rem 1rem
-  background: reduce(3)
+  background: color-mix(in srgb, var(--theme-surface) 95%, transparent)
   transition: .2s transform, .2s border-color
 
 .highlight-card:hover
   transform: translateY(-2px)
-  border-color: reduce(30)
+  border-color: var(--theme-link)
 
 .highlight-card h3
   margin: 0 0 .3rem
   font-size: 1.03em
-  color: $accent-secondary
+  color: var(--theme-accent-2)
 
 .highlight-card p
   margin: 0
@@ -249,6 +253,8 @@ a:hover .icon
 
 .home-recent
   margin-top: 1.8rem
+  margin-left: .45rem
+  margin-right: .45rem
 
 .section-head
   display: flex
@@ -270,15 +276,15 @@ a:hover .icon
     grid-template-columns: 1fr
 
 .recent-card
-  border: 1px solid reduce(16)
+  border: 1px solid var(--theme-border)
   border-radius: 10px
   padding: .85rem .95rem
-  background: reduce(2)
+  background: color-mix(in srgb, var(--theme-surface) 95%, transparent)
   transition: .2s transform, .2s border-color
 
 .recent-card:hover
   transform: translateY(-2px)
-  border-color: reduce(30)
+  border-color: var(--theme-link)
 
 .recent-card h3
   margin: .1rem 0 .35rem
@@ -302,7 +308,7 @@ a:hover .icon
   margin-bottom: 1rem
 
 .filter-chip
-  border: 1px solid reduce(30)
+  border: 1px solid var(--theme-border)
   background: transparent
   border-radius: 999px
   padding: .33rem .72rem
@@ -311,29 +317,31 @@ a:hover .icon
   transition: .2s border-color, .2s background, .2s color
 
 .filter-chip.active
-  background: $link-color
-  border-color: $link-color
-  color: $light
+  background: var(--theme-link)
+  border-color: var(--theme-link)
+  color: var(--theme-surface)
 
 .project-grid
   display: grid
   grid-template-columns: repeat(2, minmax(0, 1fr))
   gap: .9rem
+  margin-left: .45rem
+  margin-right: .45rem
 
 @media (max-width: 52em)
   .project-grid
     grid-template-columns: 1fr
 
 .project-card
-  border: 1px solid reduce(16)
+  border: 1px solid var(--theme-border)
   border-radius: 10px
   padding: .85rem .95rem
-  background: reduce(2)
+  background: color-mix(in srgb, var(--theme-surface) 95%, transparent)
   transition: .2s transform, .2s border-color
 
 .project-card:hover
   transform: translateY(-2px)
-  border-color: reduce(30)
+  border-color: var(--theme-link)
 
 .project-card h2
   margin: .1rem 0 .4rem
@@ -345,7 +353,7 @@ a:hover .icon
 
 .project-date
   font-size: .82em
-  opacity: .75
+  color: var(--theme-muted)
   margin: 0
 
 .project-tags
@@ -357,9 +365,15 @@ a:hover .icon
 .project-tags span
   display: inline-block
   font-size: .78em
-  border: 1px solid reduce(24)
+  border: 1px solid var(--theme-border)
   border-radius: 999px
   padding: .16rem .5rem
+
+.header-controls
+  display: inline-flex
+  align-items: center
+  gap: .5rem
+  flex-wrap: wrap
 
 .project-grid article:not(:last-of-type)
   border-bottom: none

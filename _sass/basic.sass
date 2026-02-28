@@ -1,6 +1,44 @@
+/* Theme tokens (Option 1: Cool Professional) */
+:root
+  --theme-bg: #F8FAFC
+  --theme-fg: #0F172A
+  --theme-surface: #FFFFFF
+  --theme-link: #2563EB
+  --theme-accent-2: #0EA5E9
+  --theme-border: rgba(15, 23, 42, 0.14)
+  --theme-muted: rgba(15, 23, 42, 0.72)
+
+@media (prefers-color-scheme: dark)
+  :root
+    --theme-bg: #0B1220
+    --theme-fg: #E5E7EB
+    --theme-surface: #111827
+    --theme-link: #60A5FA
+    --theme-accent-2: #22D3EE
+    --theme-border: rgba(229, 231, 235, 0.16)
+    --theme-muted: rgba(229, 231, 235, 0.76)
+
+html[data-theme="light"]
+  --theme-bg: #F8FAFC
+  --theme-fg: #0F172A
+  --theme-surface: #FFFFFF
+  --theme-link: #2563EB
+  --theme-accent-2: #0EA5E9
+  --theme-border: rgba(15, 23, 42, 0.14)
+  --theme-muted: rgba(15, 23, 42, 0.72)
+
+html[data-theme="dark"]
+  --theme-bg: #0B1220
+  --theme-fg: #E5E7EB
+  --theme-surface: #111827
+  --theme-link: #60A5FA
+  --theme-accent-2: #22D3EE
+  --theme-border: rgba(229, 231, 235, 0.16)
+  --theme-muted: rgba(229, 231, 235, 0.76)
+
 body
-  background: $light
-  color: $dark
+  background: var(--theme-bg)
+  color: var(--theme-fg)
   font-family: $font-family
   font-weight: $font-weight
   font-size: $font-size
@@ -10,11 +48,6 @@ body
   -webkit-text-size-adjust: 100%
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-
-@media (prefers-color-scheme: dark)
-  body
-    background: $dark
-    color: $light
 
 h1, h2, h3, h4, h5, h6
   font-weight: $heading-weight
@@ -26,7 +59,7 @@ p
   text-align: left
 
 a
-  color: $link-color
+  color: var(--theme-link)
   text-decoration: inherit
   &:hover
     text-decoration: underline
@@ -94,3 +127,20 @@ pre
   border-radius: 2px
   margin: 0 .1em
   padding: .2em .4em
+
+.theme-toggle
+  border: 1px solid var(--theme-border)
+  background: var(--theme-surface)
+  color: var(--theme-fg)
+  border-radius: 999px
+  font: inherit
+  font-size: .9em
+  padding: .3rem .75rem
+  cursor: pointer
+  transition: .2s border-color, .2s background, .2s transform
+
+.theme-toggle:hover
+  border-color: var(--theme-link)
+  background: rgba(37, 99, 235, 0.08)
+  text-decoration: none
+  transform: translateY(-1px)
