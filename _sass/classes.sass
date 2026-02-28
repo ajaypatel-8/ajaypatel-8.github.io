@@ -310,6 +310,7 @@ a:hover .icon
 .filter-chip
   border: 1px solid var(--theme-border)
   background: transparent
+  color: var(--theme-fg)
   border-radius: 999px
   padding: .33rem .72rem
   cursor: pointer
@@ -366,14 +367,10 @@ a:hover .icon
   display: inline-block
   font-size: .78em
   border: 1px solid var(--theme-border)
+  color: var(--theme-fg)
+  background: color-mix(in srgb, var(--theme-surface) 96%, transparent)
   border-radius: 999px
   padding: .16rem .5rem
-
-.header-controls
-  display: inline-flex
-  align-items: center
-  gap: .5rem
-  flex-wrap: wrap
 
 .project-grid article:not(:last-of-type)
   border-bottom: none

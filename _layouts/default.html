@@ -39,7 +39,7 @@
   <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }}</a>
   <div class="header-controls">
     {% include menu.html menu=pages %}
-    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">Night</button>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">☾</button>
   </div>
 </header>
 
@@ -64,8 +64,10 @@
     }
 
     function paintLabel(theme) {
-      button.textContent = theme === "dark" ? "Light" : "Night";
-      button.setAttribute("aria-label", "Switch to " + (theme === "dark" ? "light" : "dark") + " mode");
+      var nextTheme = theme === "dark" ? "light" : "dark";
+      button.textContent = nextTheme === "dark" ? "☾" : "☀";
+      button.setAttribute("aria-label", "Switch to " + nextTheme + " mode");
+      button.setAttribute("title", "Switch to " + nextTheme + " mode");
     }
 
     paintLabel(detectTheme());

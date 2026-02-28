@@ -134,13 +134,29 @@ pre
   color: var(--theme-fg)
   border-radius: 999px
   font: inherit
-  font-size: .9em
-  padding: .3rem .75rem
+  font-size: 1.05em
+  line-height: 1
+  min-width: 2.25rem
+  min-height: 2.25rem
+  padding: .45rem .55rem
   cursor: pointer
   transition: .2s border-color, .2s background, .2s transform
+  flex-shrink: 0
 
 .theme-toggle:hover
   border-color: var(--theme-link)
   background: rgba(37, 99, 235, 0.08)
   text-decoration: none
   transform: translateY(-1px)
+
+.header-controls
+  display: inline-flex
+  align-items: center
+  gap: .45rem
+  flex-wrap: nowrap
+
+.header-controls nav
+  margin: 0
+
+.header-controls nav a
+  margin: .4rem .8rem
