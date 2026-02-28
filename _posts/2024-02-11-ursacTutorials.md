@@ -1,7 +1,7 @@
 ---
 title: "URSAC Coding Tutorials"
 layout: post
-categories: undergraduate
+categories: [undergrad, baseball, football]
 ---
 
 As part of my leadership role with the University of Rochester's sports analytics club, I developed and led two coding tutorials for our club.

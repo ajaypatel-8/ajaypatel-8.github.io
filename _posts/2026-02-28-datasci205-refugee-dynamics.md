@@ -1,7 +1,7 @@
 ---
 title: "Understanding Global Humanitarian Dynamics (MIDS DATASCI 205 Final Project)"
 layout: post
-categories: research
+categories: [grad, graph, policy]
 ---
 
 For my UC Berkeley MIDS DATASCI 205 final project, our team analyzed global forced displacement to understand where refugee movement is concentrated, how large flows are, and which corridors matter most for policy and aid planning. Using the `PopulationStatistics` refugees R package (UNHCR, UNRWA, and IDMC data), we modeled countries as nodes and refugee flows as directed weighted edges.

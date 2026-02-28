@@ -1,7 +1,7 @@
 ---
 title:  "Basketball Database - Databases Final Project"
 layout: post
-categories: undergrad
+categories: [undergrad, software]
 ---
 
 As part of my undergraduate coursework, Tochi Onwuasoanya and I created a Flask app hosting hypothetical basketball data through MySQL, using

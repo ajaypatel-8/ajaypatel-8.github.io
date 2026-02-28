@@ -1,7 +1,7 @@
 ---
 title:  "Metabolic Syndrome Classification - Data Mining Final Project"
 layout: post
-categories: undergrad
+categories: [undergrad, ml]
 ---
 
 As part of my undergraduate coursework, I, with a group, completed a final project for Data Mining where we built predictive models

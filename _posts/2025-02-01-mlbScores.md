@@ -1,7 +1,7 @@
 ---
 title:  "MLB Scores Website"
 layout: post
-categories: research
+categories: [baseball, software]
 ---
 
 Using MLB's API, I developed a website utilizing React and Javascript to display MLB scores and relevant information for completed games, 

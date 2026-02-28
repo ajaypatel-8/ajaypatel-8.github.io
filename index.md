@@ -1,6 +1,5 @@
 ---
-layout: page
-title: "About Me"
+layout: default
 ---
 
 <section class="home-hero">
@@ -16,7 +15,7 @@ title: "About Me"
       In the past, I've worked in data and analytics roles with the Los Angeles Dodgers, Optum, and ShotQuality. My work focuses on applied machine learning and data-driven decision-making, with a particular emphasis on baseball data.
     </p>
     <div class="hero-actions">
-      <a class="hero-btn hero-btn-primary" href="/blog/">View Projects & Articles</a>
+      <a class="hero-btn hero-btn-primary" href="/blog/">View Projects</a>
       <a class="hero-btn hero-btn-secondary" href="/resume/">View Resume</a>
     </div>
   </div>
@@ -29,7 +28,7 @@ title: "About Me"
   </div>
   <div class="highlight-card">
     <h3>Baseball Analytics</h3>
-    <p>Current Junior Data Scientist with the Pittsburgh Pirates, building research and tooling for player and game-level decisions.</p>
+    <p>Experience in two MLB front offices plus personal projects focused on player evaluation and game-level decision support.</p>
   </div>
   <div class="highlight-card">
     <h3>End-to-End Projects</h3>
@@ -47,17 +46,14 @@ title: "About Me"
   </div>
   <div class="recent-grid">
     <article class="recent-card">
-      <p class="recent-date">Featured Project</p>
       <h3><a href="{{ featured_rain.url | relative_url }}">Rainfall Prediction in Australia</a></h3>
       <p>Time-aware machine learning project using WeatherAUS data, sequence baselines, and latent-space methods to improve rain-day forecasting.</p>
     </article>
     <article class="recent-card">
-      <p class="recent-date">Featured Project</p>
       <h3><a href="{{ featured_bdb.url | relative_url }}">Scouting Opponents Through Expected YAC (NFL Big Data Bowl 2024)</a></h3>
       <p>Tracking-data modeling project for expected YAC and coaching-focused opponent scouting built for the NFL Big Data Bowl.</p>
     </article>
     <article class="recent-card">
-      <p class="recent-date">Featured Project</p>
       <h3><a href="{{ featured_scores.url | relative_url }}">MLB Scores Website</a></h3>
       <p>React application that surfaces daily MLB game results, previews, top performers, and game-level links for deeper analysis.</p>
     </article>

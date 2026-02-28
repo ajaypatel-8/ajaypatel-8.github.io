@@ -1,7 +1,7 @@
 ---
 title:  "Pitcher Game Reports"
 layout: post
-categories: research
+categories: [baseball, software]
 ---
 
 Using pitch-level data from MLB, I developed visualization reports in R utilizing the ggplot2 and gt packages to summarize a starting pitcher's 

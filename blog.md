@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "Blog"
+title: "Projects"
 ---
 
 <article class="projects-shell">
   <header>
-    <h1>Projects & Articles</h1>
+    <h1>Projects</h1>
     <p>A running archive of my research, coursework, and personal data projects.</p>
   </header>
 

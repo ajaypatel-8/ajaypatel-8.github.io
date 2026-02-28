@@ -1,7 +1,7 @@
 ---
 title:  "Pitch Type Sequencing Similarity Ratio"
 layout: post
-categories: research
+categories: [baseball, ml]
 ---
 
 Sean Sullivan and I published extensive work on analyzing pitch sequencing in MLB. Using the difflib package in Python, we generated sequence 

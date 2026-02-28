@@ -1,7 +1,7 @@
 ---
 title: "Rainfall Prediction in Australia (MIDS DATASCI 207 Final Project)"
 layout: post
-categories: research
+categories: [grad, ml]
 ---
 
 For my UC Berkeley MIDS DATASCI 207 final project, my team and I studied next-day rainfall prediction in Australia using the WeatherAUS dataset. We framed the task as predicting `RainTomorrow` from daily weather variables, and built the pipeline with a strict chronological split and expanding-window cross-validation to avoid temporal leakage.
