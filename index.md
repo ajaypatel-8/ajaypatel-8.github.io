@@ -24,12 +24,12 @@ title: "About Me"
 
 <section class="home-highlights">
   <div class="highlight-card">
-    <h3>Applied Modeling</h3>
-    <p>Building practical predictive systems across sports, healthcare, and education-focused problems.</p>
+    <h3>Data Science</h3>
+    <p>Applying statistics and machine learning to solve practical problems across sports, healthcare, and education.</p>
   </div>
   <div class="highlight-card">
     <h3>Baseball Analytics</h3>
-    <p>Research and tooling for pitch analysis, sequencing, player evaluation, and game-level decision support.</p>
+    <p>Current Junior Data Scientist with the Pittsburgh Pirates, building research and tooling for player and game-level decisions.</p>
   </div>
   <div class="highlight-card">
     <h3>End-to-End Projects</h3>
@@ -38,18 +38,28 @@ title: "About Me"
 </section>
 
 <section class="home-recent">
+  {% assign featured_rain = site.posts | where_exp: "item", "item.path == '_posts/2026-02-28-207-final-project.md'" | first %}
+  {% assign featured_bdb = site.posts | where_exp: "item", "item.path == '_posts/2024-01-06-bdb.md'" | first %}
+  {% assign featured_scores = site.posts | where_exp: "item", "item.path == '_posts/2025-02-01-mlbScores.md'" | first %}
   <div class="section-head">
-    <h2>Recent Work</h2>
+    <h2>Featured Work</h2>
     <a href="/blog/">See all projects</a>
   </div>
   <div class="recent-grid">
-    {% assign recent_posts = site.posts | sort: "date" | reverse %}
-    {% for post in recent_posts limit: 3 %}
     <article class="recent-card">
-      <p class="recent-date">{{ post.date | date: "%B %d, %Y" }}</p>
-      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-      <p>{{ post.excerpt | strip_html | truncatewords: 22 }}</p>
+      <p class="recent-date">Featured Project</p>
+      <h3><a href="{{ featured_rain.url | relative_url }}">Rainfall Prediction in Australia</a></h3>
+      <p>Time-aware machine learning project using WeatherAUS data, sequence baselines, and latent-space methods to improve rain-day forecasting.</p>
     </article>
-    {% endfor %}
+    <article class="recent-card">
+      <p class="recent-date">Featured Project</p>
+      <h3><a href="{{ featured_bdb.url | relative_url }}">Scouting Opponents Through Expected YAC (NFL Big Data Bowl 2024)</a></h3>
+      <p>Tracking-data modeling project for expected YAC and coaching-focused opponent scouting built for the NFL Big Data Bowl.</p>
+    </article>
+    <article class="recent-card">
+      <p class="recent-date">Featured Project</p>
+      <h3><a href="{{ featured_scores.url | relative_url }}">MLB Scores Website</a></h3>
+      <p>React application that surfaces daily MLB game results, previews, top performers, and game-level links for deeper analysis.</p>
+    </article>
   </div>
 </section>
