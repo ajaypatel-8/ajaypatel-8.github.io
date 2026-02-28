@@ -1,0 +1,9 @@
+---
+title: "Rainfall Prediction in Australia (MIDS DATASCI 207 Final Project)"
+layout: post
+categories: research
+---
+
+For my UC Berkeley MIDS DATASCI 207 final project, my team and I studied next-day rainfall prediction in Australia using WeatherAUS data, asking: **can we learn a latent rainy manifold and use latent-space augmentation to improve rainfall classification?** We treated the task as binary prediction (`RainTomorrow`) on a 10-year multivariate daily weather dataset (temperature, humidity, pressure, wind, cloud/sun/evaporation, lagged rainfall, and calendar features). This is a difficult forecasting problem due to strong class imbalance, substantial feature-space overlap between rain/no-rain days, and temporal dependence that makes random train/test shuffling invalid.
+
+Our pipeline used chronological evaluation (60/20/20 train/validation/test + expanding-window CV), feature engineering (temperature range, humidity/pressure deltas, wind direction sin/cos encoding, lagged and rolling weather stats), and manifold analysis (PCA/UMAP on raw features plus learned embedding geometry). Baselines included Logistic Regression, Random Forest, RNN, and PatchTST, and we evaluated with ROC-AUC and positive-class F1. We then introduced generative latent approaches (VAE with regularization sweeps, and latent WGAN feature extraction) to better model rainy-day structure and support latent-space augmentation. Across experiments, the manifold-aware generative approach improved rain-day forecasting versus purely discriminative baselines, produced stronger ROC-AUC than the best sequence baselines, and provided a more balanced precision-recall tradeoff on the rainy class. The project repo is here: [MIDS DS207 Final Project (AARVE)](https://github.com/UC-Berkeley-I-School/mids_ds207_finalproject_aarve/tree/main).
