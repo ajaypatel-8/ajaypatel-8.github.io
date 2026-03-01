@@ -12,7 +12,7 @@ layout: default
       Welcome to my personal website! I currently work for the Pittsburgh Pirates as a junior data scientist while also pursuing my Masters of Information and Data Science at UC Berkeley. I earned my Bachelor's of Science in Data Science from the University of Rochester in December 2024.
     </p>
     <p>
-      In the past, I've worked in data and engineering roles with the Los Angeles Dodgers, Optum, and ShotQuality. My work focuses on applied machine learning and supporting data-driven decision, with a particular emphasis in baseball.
+      In the past, I've worked in data and engineering roles with the Los Angeles Dodgers, Optum, and ShotQuality. My work focuses on applied machine learning and supporting data-driven decisions, with a particular emphasis in baseball.
     </p>
     <div class="hero-actions">
       <a class="hero-btn hero-btn-primary" href="/blog/">View Projects</a>
@@ -28,7 +28,7 @@ layout: default
   </div>
   <div class="highlight-card">
     <h3>Baseball Analytics</h3>
-    <p>Experience in two MLB front offices plus personal projects focused on player evaluation and game-level decision support.</p>
+    <p>Experience in two MLB front offices plus personal projects focused on player evaluation, in-game strategy, and more.</p>
   </div>
   <div class="highlight-card">
     <h3>End-to-End Projects</h3>
@@ -47,15 +47,15 @@ layout: default
   <div class="recent-grid">
     <article class="recent-card">
       <h3><a href="{{ featured_rain.url | relative_url }}">Rainfall Prediction in Australia</a></h3>
-      <p>Time-aware machine learning project using WeatherAUS data, sequence baselines, and latent-space methods to improve rain-day forecasting.</p>
+      <p>Time based machine learning project using WeatherAUS data, sequence baselines, and latent-space methods to improve rain forecasting.</p>
     </article>
     <article class="recent-card">
       <h3><a href="{{ featured_bdb.url | relative_url }}">Scouting Opponents Through Expected YAC (NFL Big Data Bowl 2024)</a></h3>
-      <p>Tracking-data modeling project for expected YAC and coaching-focused opponent scouting built for the NFL Big Data Bowl.</p>
+      <p>Utilized tracking data to model expected YAC and built coach facing opponent scouting for the NFL Big Data Bowl.</p>
     </article>
     <article class="recent-card">
       <h3><a href="{{ featured_scores.url | relative_url }}">MLB Scores Website</a></h3>
-      <p>React application that surfaces daily MLB game results, previews, top performers, and game-level links for deeper analysis.</p>
+      <p>React application that displays MLB games with tables, plots, and other functionality at a modular level.</p>
     </article>
   </div>
 </section>
