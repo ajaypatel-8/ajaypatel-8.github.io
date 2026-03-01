@@ -9,10 +9,10 @@ layout: default
   <div class="home-hero-copy">
     <p class="hero-kicker">Data Science · Machine Learning · Baseball Analytics</p>
     <p>
-      Welcome to my personal website! I'm a current Junior Data Scientist with the Pittsburgh Pirates and a Master of Information and Data Science student at UC Berkeley. I earned my Bachelor's of Science in Data Science from the University of Rochester in December 2024.
+      Welcome to my personal website! I currently work for the Pittsburgh Pirates as a junior data scientist while also pursuing my Masters of Information and Data Science at UC Berkeley. I earned my Bachelor's of Science in Data Science from the University of Rochester in December 2024.
     </p>
     <p>
-      In the past, I've worked in data and analytics roles with the Los Angeles Dodgers, Optum, and ShotQuality. My work focuses on applied machine learning and data-driven decision-making, with a particular emphasis on baseball data.
+      In the past, I've worked in data and engineering roles with the Los Angeles Dodgers, Optum, and ShotQuality. My work focuses on applied machine learning and supporting data-driven decision, with a particular emphasis in baseball.
     </p>
     <div class="hero-actions">
       <a class="hero-btn hero-btn-primary" href="/blog/">View Projects</a>
@@ -24,7 +24,7 @@ layout: default
 <section class="home-highlights">
   <div class="highlight-card">
     <h3>Data Science</h3>
-    <p>Applying statistics and machine learning to solve practical problems across sports, healthcare, and education.</p>
+    <p>Applying statistics and machine learning to solve practical problems in sports and other domains.</p>
   </div>
   <div class="highlight-card">
     <h3>Baseball Analytics</h3>
