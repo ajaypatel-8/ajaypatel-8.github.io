@@ -49,7 +49,11 @@ title: "Projects"
         button.classList.add("active");
 
         cards.forEach((card) => {
-          const categories = card.getAttribute("data-categories");
+          const categories = card
+            .getAttribute("data-categories")
+            .split(",")
+            .map((value) => value.trim())
+            .filter(Boolean);
           const visible = selected === "all" || categories.includes(selected);
           card.style.display = visible ? "block" : "none";
         });
